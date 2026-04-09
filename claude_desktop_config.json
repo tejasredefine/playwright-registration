@@ -1,0 +1,48 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@playwright/mcp@latest"
+      ],
+      "cwd": "C:\\\\Users\\\\tejas\\\\.claude\\\\playwright-mcp"
+    },
+    "mysql": {
+      "command": "C:\\\\Users\\\\tejas\\\\AppData\\\\Roaming\\\\Python\\\\Python314\\\\Scripts\\\\uv.exe",
+      "args": [
+        "tool",
+        "run",
+        "mysql_mcp_server"
+      ],
+      "env": {
+        "MYSQL_HOST": "127.0.0.1",
+        "MYSQL_PORT": "3306",
+        "MYSQL_USER": "root",
+        "MYSQL_PASSWORD": "<YOUR_MYSQL_PASSWORD>",
+        "MYSQL_DATABASE": "Shopping"
+      }
+    },
+    "postgres": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-postgres-server"
+      ],
+      "env": {
+        "PG_HOST": "localhost",
+        "PG_PORT": "5432",
+        "PG_USER": "postgres",
+        "PG_PASSWORD": "<YOUR_PG_PASSWORD>",
+        "PG_DATABASE": "Shopping"
+      }
+    }
+  },
+  "preferences": {
+    "coworkScheduledTasksEnabled": false,
+    "ccdScheduledTasksEnabled": false,
+    "sidebarMode": "chat",
+    "coworkWebSearchEnabled": true,
+    "keepAwakeEnabled": true
+  }
+}
