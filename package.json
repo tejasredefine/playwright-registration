@@ -1,0 +1,13 @@
+{
+  "name": "playwright-registration",
+  "version": "1.0.0",
+  "description": "Playwright script to auto-register users on rahulshettyacademy.com",
+  "main": "register.js",
+  "scripts": {
+    "start": "node register.js",
+    "install-browsers": "npx playwright install chromium"
+  },
+  "dependencies": {
+    "playwright": "^1.43.0"
+  }
+}
